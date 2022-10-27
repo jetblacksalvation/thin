@@ -36,5 +36,7 @@ else:
 x = lambda arg1, arg2, arg3 :  (arg1 *arg2 *arg3)  
 print("{} - is the value".format(x(10,20,30)) )
 #----
-b = lambda arg1 : ([print("{} bottles of root beer on the wall".format(f)) for f in range(arg1)])
-b(10)
+b = lambda arg1 : ([print("{} bottles of root beer on the wall".format(f+1)) for f in range(arg1)])
+
+
+b(int(input("give me a how many bottles of root beer you have")))
